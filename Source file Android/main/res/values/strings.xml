@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FogCollegeCloudClient</string>
+    <string name="ip_settings">Server Setting</string>
+    <string name="prompt_ipaddress">Enter Server Address</string>
+    <string name="ip_ok">Ok</string>
+    <string name="ip_cancel">Cancel</string>
+    <string name="loading">loading</string>
+</resources>

@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back"
+    tools:context=".ConfigureActivity" >
+
+    <EditText
+        android:id="@+id/ipEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="10"
+        android:text="192.168.43.232"
+        android:textColor="#fff"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="57dp"
+        android:text="IP Address"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/ipEditText"
+        android:layout_marginTop="58dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Port No"
+        android:textColor="#fff"/>
+
+    <EditText
+        android:id="@+id/portEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/ipEditText"
+        android:ems="10"
+        android:inputType="number"
+        android:text="8899"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/ipOkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/portEditText"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:text="Ok" />
+    <Button
+        android:id="@+id/ipCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/portEditText"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:text="Cancel" />
+</RelativeLayout>
